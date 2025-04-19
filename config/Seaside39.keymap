@@ -46,9 +46,9 @@
         default_layer {
             bindings = <
 &kp Q               &kp L      &kp U         &kp MINUS           &kp PERIOD                               &kp F          &kp W  &kp R    &kp Y  &lt 6 P
-&kp E               &kp I      &kp A         &kp O               &kp ENTER                                &kp K          &kp T  &kp N    &kp S  &kp H
+&kp E               &kp I      &kp A         &kp O               &kp COMMA                                &kp K          &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z      &kp X         &kp C               &kp V                                    &kp G          &kp D  &lt 5 M  &kp J  &kp B
-&kp ESC             &kp LCTRL  &kp LEFT_ALT  &mt LEFT_WIN COMMA  &lt 3 SPACE  &lt 2 LANG2      &kp LANG1  &lt 1 BACKSPACE                       &kp FSLH
+&kp ESC             &kp LCTRL  &kp LEFT_ALT  &mt ENTER  &lt 3 SPACE  &LEFT_WIN LANG2      &lt 2 LANG1  &lt 1 BACKSPACE                       &kp FSLH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -65,19 +65,19 @@
 
         NUM {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12                      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp MINUS
-&trans  &kp F5  &kp F6   &kp F7   &kp F8                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK     &kp SLASH
-&trans  &kp F1  &kp F2   &kp F3   &kp F4                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE  &kp COLON
-&trans  &trans  &trans   &trans   &trans   &trans      &trans  &kp NUMBER_0                                               &kp PERIOD
+&trans  &kp F9  &kp F10  &kp F11  &kp F12                      &kp COLON     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&trans  &kp F5  &kp F6   &kp F7   &kp F8                       &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans  &kp F1  &kp F2   &kp F3   &kp F4                       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&trans  &trans  &trans   &trans   &trans   &trans      &trans  &kp BACKSPACE                                           &kp SLASH
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &mkp MB4                &kp UP_ARROW    &mkp MB5                 &trans                       &kp LG(LEFT_ARROW)          &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp RA(RIGHT_ARROW)      &kp RG(RIGHT_ARROW)
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                      &kp LC(LS(TAB))             &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp RC(TAB)
-&kp LEFT_SHIFT  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(UP_ARROW))          &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)                       &kp LA(LG(LC(LEFT_ARROW)))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(F))   &kp RG(RA(RIGHT_ARROW))  &kp RA(RC(RG(RIGHT_ARROW)))
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &kp BACKSPACE                                                                                &trans
+&kp ESCAPE      &LG(LEFT_ARROW)         &kp UP_ARROW          &LG(RIGHT_ARROW)    &LC(UP_ARROW)                     &kp LG(LEFT_ARROW)          &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp RA(RIGHT_ARROW)      &kp RG(RIGHT_ARROW)
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW        &kp RIGHT_ARROW     &kp END                           &kp LC(LS(TAB))             &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp RC(TAB)
+&kp LEFT_SHIFT  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(UP_ARROW))  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)                  &kp LA(LG(LC(LEFT_ARROW)))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(F))   &kp RG(RA(RIGHT_ARROW))  &kp RA(RC(RG(RIGHT_ARROW)))
+&trans          &trans                  &trans                &trans              &trans            &trans  &trans  &kp BACKSPACE                                                                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -85,9 +85,9 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB4  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
